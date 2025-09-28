@@ -35,7 +35,7 @@ _Add screenshots of your website here to showcase the UI and features._
 
 ![Homepage Screenshot](https://github.com/couchrahulxjas/Rahul-Bookstore/blob/main/Screenshot%202025-09-28%20125606.png)  
 
-> Tip: Replace `path/to/...` with the actual path or link to your image.
+
 
 ---
 
