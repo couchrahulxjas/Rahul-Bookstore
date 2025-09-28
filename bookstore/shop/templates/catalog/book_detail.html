@@ -1,0 +1,14 @@
+{% extends "catalog/base.html" %}
+{% block content %}
+<div class="card p-4">
+  {% if book.cover %}
+    <img src="{{ book.cover.url }}" class="img-fluid mb-3" style="max-height:300px;">
+  {% endif %}
+  <h1>{{ book.title }}</h1>
+  <h4 class="text-muted">By {{ book.author }}</h4>
+  <p><strong>Price:</strong> ${{ book.price }}</p>
+  <p>{{ book.description }}</p>
+  <a href="/cart/add/{{ book.id }}/" class="btn btn-success">Add to Cart</a>
+  <a href="/" class="btn btn-outline-secondary">⬅ Back</a>
+</div>
+{% endblock %}

@@ -1,0 +1,9 @@
+{% extends "catalog/base.html" %}
+{% block content %}
+<div class="alert alert-success">
+  <h2> Order Successful!</h2>
+  <p>Thank you {{ order.name }}. Your order (ID: {{ order.id }}) has been placed.</p>
+  <p><strong>Total:</strong> ${{ order.total }}</p>
+</div>
+<a href="/" class="btn btn-primary">Back to Store</a>
+{% endblock %}

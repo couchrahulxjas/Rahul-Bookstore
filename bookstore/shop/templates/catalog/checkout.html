@@ -1,0 +1,17 @@
+{% extends "catalog/base.html" %}
+{% block content %}
+<h1>Checkout</h1>
+<form method="post">
+  {% csrf_token %}
+  <div class="mb-3">
+    <label>Name</label>
+    <input type="text" name="name" class="form-control" required>
+  </div>
+  <div class="mb-3">
+    <label>Email</label>
+    <input type="email" name="email" class="form-control" required>
+  </div>
+  <h4>Total: ${{ total|floatformat:2 }}</h4>
+  <button type="submit" class="btn btn-success">Place Order</button>
+</form>
+{% endblock %}
